@@ -51,8 +51,8 @@ btnEl.addEventListener("click", () => {
         <strong>Thank you!</strong>
         <br>
         <br>
-        <strong>Feedback: ${selectedRating}</strong>
-        <p>We'll use your feedback to improve our customer support.</p>
+        <strong style="color:white ;">Feedback: ${selectedRating}</strong>
+        <p style="color:white ;">>We'll use your feedback to improve our customer support.</p>
         `;
   }
 });
