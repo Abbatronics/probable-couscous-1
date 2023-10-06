@@ -18,7 +18,13 @@ h2 {
   text-align: center;
   color: white;
 }
-
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  #font-size: 14
+  text-align: center;
+  color: seagreen;
+}
 .clock {
   display: flex;
 }
