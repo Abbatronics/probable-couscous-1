@@ -28,6 +28,7 @@ function updateClock() {
 }
 
 updateClock();
+
 const ratingEls = document.querySelectorAll(".rating");
 const btnEl = document.getElementById("btn");
 
@@ -48,11 +49,11 @@ ratingEls.forEach((ratingEl) => {
 btnEl.addEventListener("click", () => {
   if (selectedRating !== "") {
     containerEl.innerHTML = `
-        <strong style="color:white ;">>Thank you!</strong>
+        <strong>Thank you!</strong>
         <br>
         <br>
         <strong style="color:white ;">Feedback: ${selectedRating}</strong>
-        <p style="color:white ;">>We'll use your feedback to improve our customer support.</p>
+        <p>We'll use your feedback to improve our customer support.</p>
         `;
   }
 });
