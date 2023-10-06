@@ -101,6 +101,7 @@ body {
   cursor: pointer;
   padding: 10px;
   margin: 10px 5px;
+  color: white;
 }
 
 .rating:hover,
