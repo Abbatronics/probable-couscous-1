@@ -137,7 +137,7 @@ body {
 body {
   margin: 0;
   height: 100vh;
-  #background-color: #black;
+  background-color: black;
   overflow: hidden;
 }
 
