@@ -51,12 +51,16 @@ btnEl.addEventListener("click", () => {
         <strong>Thank you!</strong>
         <br>
         <br>
-        <strong style="color:white ;">Feedback: ${selectedRating}</strong>
+        <strong>Feedback: ${selectedRating}</strong>
         <p>We'll use your feedback to improve our customer support.</p>
-        ;
+        `;
   }
 });
 
+function removeActive() {
+  ratingEls.forEach((ratingEl) => {
+    ratingEl.classList.remove("active");
+  });
 }
 const bodyEl = document.querySelector("body");
 
