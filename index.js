@@ -1,25 +1,30 @@
-let num = 0;
+const hourEl = document.getElementById("hour");
+const minuteEl = document.getElementById("minutes");
+const secondEl = document.getElementById("seconds");
+const ampmEl = document.getElementById("ampm");
 
-const value = document.querySelector(".value");
-const btns = document.querySelectorAll(".btn");
+function updateClock() {
+  let h = new Date().getHours();
+  let m = new Date().getMinutes();
+  let s = new Date().getSeconds();
+  let ampm = "AM";
 
-btns.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    const styles = e.currentTarget.classList;
-    if (styles.contains("decrease")) {
-      num--;
-    } else if (styles.contains("increase")) {
-      num++;
-    } else {
-      num = 0;
-    }
-    value.textContent = num;
-    if (num > 0) {
-      value.style.color = "green";
-    } else if (num < 0) {
-      value.style.color = "red";
-    } else {
-      value.style.color = "black";
-    }
-  });
-});
+  if (h > 12) {
+    h = h - 12;
+    ampm = "PM";
+  }
+
+  h = h < 10 ? "0" + h : h;
+  m = m < 10 ? "0" + m : m;
+  s = s < 10 ? "0" + s : s;
+
+  hourEl.innerText = h;
+  minuteEl.innerText = m;
+  secondEl.innerText = s;
+  ampmEl.innerText = ampm;
+  setTimeout(() => {
+    updateClock();
+  }, 1000);
+}
+
+updateClock();
