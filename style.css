@@ -89,6 +89,7 @@ body {
 .heading {
   margin: 5px;
   font-size: 30px;
+  color: white; 
 }
 
 .ratings-container {
