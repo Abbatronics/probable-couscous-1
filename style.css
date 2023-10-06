@@ -89,7 +89,6 @@ body {
 .heading {
   margin: 5px;
   font-size: 30px;
-  color: white; 
 }
 
 .ratings-container {
@@ -101,7 +100,6 @@ body {
   cursor: pointer;
   padding: 10px;
   margin: 10px 5px;
-  color: white;
 }
 
 .rating:hover,
@@ -136,5 +134,3 @@ body {
 .rating img {
   width: 40px;
 }
-
-
