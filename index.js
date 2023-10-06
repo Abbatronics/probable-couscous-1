@@ -28,7 +28,6 @@ function updateClock() {
 }
 
 updateClock();
-
 const ratingEls = document.querySelectorAll(".rating");
 const btnEl = document.getElementById("btn");
 
