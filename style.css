@@ -23,7 +23,7 @@ h1 {
   letter-spacing: 4px;
   #font-size: 14
   text-align: center;
-  color: seagreen;
+  color: green;
 }
 .clock {
   display: flex;
