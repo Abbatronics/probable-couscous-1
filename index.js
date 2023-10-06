@@ -49,11 +49,11 @@ ratingEls.forEach((ratingEl) => {
 btnEl.addEventListener("click", () => {
   if (selectedRating !== "") {
     containerEl.innerHTML = `
-        <strong style="color:white;">Thank you!</strong>
+        <strong style ="color:white;">Thank you!</strong>
         <br>
         <br>
-        <strong>Feedback: ${selectedRating}</strong>
-        <p>We'll use your feedback to improve our customer support.</p>
+        <strong style = "color: white;">Feedback: ${selectedRating}</strong>
+        <p style = " color: white;" >We'll use your feedback to improve our customer support.</p>
         `;
   }
 });
